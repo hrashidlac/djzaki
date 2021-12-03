@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div>s
     <div v-for="post in post.pageCollection.items" :key="post.title">
        <div>{{post.title}}</div>
     </div> 
