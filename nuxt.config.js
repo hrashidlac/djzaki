@@ -43,9 +43,12 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxtjs/markdownit',
     'nuxt-graphql-request'
   ],
-
+  markdownit: {
+    runtime: true // Support `$md()`
+  },
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
   graphql: {
