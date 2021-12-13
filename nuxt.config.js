@@ -46,6 +46,10 @@ export default {
     '@nuxtjs/markdownit',
     'nuxt-graphql-request'
   ],
+  seoMeta: {
+    title: 'DJ Zaki',
+    description: 'DJ Zaki'
+  },
   markdownit: {
     runtime: true // Support `$md()`
   },

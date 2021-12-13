@@ -1,16 +1,12 @@
 <template>
   <div>
-    <div  id="app" class="">
+    <div class="">
       <div class="mb-24">
         <div v-for="post in post.pageCollection.items" :key="post.title">
           <div>{{post.title}}</div>
           <div v-html="$md.render(post.body)"></div>
         </div> 
       </div>
-
-
-
-
       <div class="grid grid-cols-3 gap-12">
         <div v-for="mixtape in mixtape.mixtapeCollection.items" :key="mixtape.title">
           <nuxt-link :to="'mixes/'+mixtape.slug">
