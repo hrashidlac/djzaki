@@ -54,6 +54,11 @@ export default {
   	toggle() {
     	this.open = !this.open
     }
+  },
+  watch: {
+    '$route' () {
+      this.$nextTick(this.toggle);
+    }
   }
 }
 </script>
