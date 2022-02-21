@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="">
+    <div>
       <div class="mb-24">
         <div v-for="post in post.pageCollection.items" :key="post.title">
           <div>{{post.title}}</div>
@@ -14,7 +14,6 @@
             <img :src="mixtape.heroImage.url" class="border p-2 w-48">
           </nuxt-link>
         </div> 
-        <!-- <pre>{{post}}</pre> -->
       </div>
     </div>
   </div>
