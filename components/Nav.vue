@@ -34,9 +34,6 @@
             Contact
           </nuxt-link>
         </div>
-        <!-- <div>
-          <a href="#" class="no-underline inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal hover:bg-white mt-4 sm:mt-0">Download</a>
-        </div> -->
       </div>
     </nav>
   </div>
@@ -53,11 +50,14 @@ export default {
   methods: {
   	toggle() {
     	this.open = !this.open
+    },
+    close() {
+    	this.open = false
     }
   },
   watch: {
     '$route' () {
-      this.$nextTick(this.toggle);
+      this.$nextTick(this.close);
     }
   }
 }
